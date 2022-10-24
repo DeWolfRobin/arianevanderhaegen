@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer permanent :mini-variant="miniVariant" app>
+    <v-navigation-drawer permanent :mini-variant="miniVariant" app style="background-color:#3d323e">
       <v-list class="pa-0">
         <v-list-item
           style="cursor: pointer"
@@ -36,7 +36,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer padless inset app :absolute="False">
+    <v-footer padless inset app :absolute="False" style="background-color:#594959">
       <v-col class="text-center"
         >&copy; {{ new Date().getFullYear() + ' ' + copyright }}
       </v-col>
@@ -52,25 +52,25 @@ export default {
       items: [
         {
           icon: 'mdi-home',
-          title: 'Welcome',
+          title: 'Home',
           to: '/',
         },{
-          icon: 'mdi-Account',
+          icon: 'mdi-account',
           title: 'About',
           to: '/about',
         },{
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-brush',
           title: 'Projects',
           to: '/projects',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-email',
           title: 'Contact',
           to: '/contact',
         },
       ],
       miniVariant: true,
-      title: 'Home',
+      title: ' ',
       copyright: 'Ariane Van der Haegen',
     }
   },
