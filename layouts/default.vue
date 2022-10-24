@@ -54,6 +54,14 @@ export default {
           icon: 'mdi-home',
           title: 'Welcome',
           to: '/',
+        },{
+          icon: 'mdi-Account',
+          title: 'About',
+          to: '/about',
+        },{
+          icon: 'mdi-chart-bubble',
+          title: 'Projects',
+          to: '/projects',
         },
         {
           icon: 'mdi-chart-bubble',
